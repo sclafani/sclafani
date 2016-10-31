@@ -1,0 +1,15 @@
+<h2><%= @post.name %></h2>
+
+<h4><a href="<%= @post.url %>" target="_blank"><%= @post.url %></a><h4>
+
+<%= erb :new_comment %>
+
+<br>
+
+<ul>
+  <% @post.comments.each do |comment| %>
+    <li>
+      <p><%= comment.content %><br><%= comment.formatted_date %></p>
+    </li>
+  <% end %>
+</ul>

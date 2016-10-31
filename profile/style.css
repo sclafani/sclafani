@@ -1,0 +1,69 @@
+/* Here goes your CSS */
+.container {
+  width: 500px;   /* Set width*/
+  margin: 0 auto; /* Automatically set left/right margins */
+  text-align: center;
+}
+
+.card {
+  background: white;
+  padding: 30px;                              /* Internal space */
+  border-radius: 4px;                         /* Small radius */
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border: 1px solid lightgrey;
+  margin: 10 auto;
+}
+
+.img-rounded {
+  border-radius: 5%;
+}
+
+body {
+  background: AntiqueWhite;
+  font-family: Helvetica;
+}
+
+h1 {
+  font-family: Verdana;
+  color: navy;
+}
+
+h2 {
+  font-family: sans-serif;
+  line-height: 1;
+}
+
+h4 {
+  font-family: Verdana;
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: gray;
+}
+
+p {
+  color: gray;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 20px;
+  border: 30px;
+  line-height: 2em;
+  text-align: center;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.list-inline {
+  padding-left: 0px;
+}
+

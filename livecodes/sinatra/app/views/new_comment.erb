@@ -1,0 +1,11 @@
+<% if @comment.errors.present? %>
+  <p>
+    <%= @comment.errors.full_messages.join(' and ') %>
+  </p>
+<% end %>
+
+<form action="/posts/<%= @post.id %>/comments" method="POST">
+  <label for="content">Add Comment</label>
+  <input type="text" name="content" id="content" value="<%= params[:content] %>"/>
+  <input type="submit" value="Add"/>
+</form>
