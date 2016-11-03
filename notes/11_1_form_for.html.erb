@@ -1,0 +1,20 @@
+# create/edit form in the same code
+
+<%= form_for(@restaurant) do |f| %>
+# @restaurant argument determines whether to create (new restaurant) or
+# edit (existing restaurant)
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.submit %>
+<%= end %>
+
+
+#strong params deny keys not on the list
+#params.require(:key).permit(:key1, :key2)
+
+
+
+# before_action :find_restaurant, only [:show]
+# before every action in this controller is activated, call
+# find_restaurant method (only before show and whatever else is listed
